@@ -17,22 +17,23 @@ footer,
 }
 
 header {
-  background: url("../assets/bg.jpg") no-repeat;
+  background: url("../assets/bg.jpg") no-repeat 50% 50%;
   background-size: cover;
   text-align: center;
+  padding-top: 3rem;
 }
 
 .intro {
+  width: 100%;
   background: rgba(0, 0, 0, 0.15);
   padding: 0.6rem;
-  margin-top: 0;
-  opacity: 0.8;
-  position: sticky;
-  top: 0;
+  position: fixed;
+  z-index: 1;
 }
 
 ul {
   list-style-type: none;
+  padding-left: 0;
 }
 
 nav a {
@@ -40,7 +41,10 @@ nav a {
   letter-spacing: 0.1rem;
   text-decoration: none;
   color: white;
-  opacity: 0.8;
+}
+
+.header-content-wrapper {
+  padding: 0 2rem;
 }
 
 nav li {
@@ -63,12 +67,16 @@ section {
 .tea-types,
 .featured-card {
   background-color: white;
-  margin: 2rem;
+  margin: 2rem 1rem;
+}
+
+.tea-types,
+.featured-card {
+  color: black;
 }
 
 .benefits img {
-  max-width: 100%;
-  margin-top: 1.2rem;
+  width: 100%;
 }
 
 .benefits div {
@@ -80,21 +88,20 @@ h2 {
   font-family: "Amaranth", sans-serif;
   font-weight: lighter;
   letter-spacing: 0.1rem;
-}
-
-.benefits p {
-  opacity: 0.7;
+  color: white;
 }
 
 .tea-types h2 {
-  color: black;
   text-align: left;
 }
 
 .tea-types p {
-  color: black;
-  opacity: 0.7;
   text-transform: uppercase;
+}
+
+.tea-types-images img,
+.featured-cards img {
+  max-width: 100%;
 }
 
 section.featured-cards {
@@ -109,16 +116,21 @@ section.featured-cards {
   margin: 0;
 }
 
-section.featured-cards h3,
 section.featured-cards p {
-  color: black;
-  opacity: 0.7;
+  color: rgb(82, 82, 82);
 }
 
 .featured-card {
   padding-bottom: 1.2rem;
-  margin: 6rem 2rem;
+  margin: 6rem 1rem;
   box-shadow: 0.05rem 0.05rem 0.5rem black;
+}
+
+p,
+h3,
+nav a,
+.basket {
+  opacity: 0.7;
 }
 
 .featured-image {
@@ -141,16 +153,15 @@ section.featured-cards p {
   display: none;
 }
 
-@media only screen and (min-width: 768px) {
-  .basket {
-    display: flex;
-    opacity: 0.7;
-  }
-
+@media only screen and (min-width: 900px) {
   .header-basket-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .basket {
+    display: flex;
   }
 
   ul {
@@ -169,12 +180,7 @@ section.featured-cards p {
 
   .tea-types-images {
     display: flex;
-    justify-content: center;
-  }
-
-  .tea-types-images img,
-  .featured-cards img {
-    max-width: 100%;
+    justify-content: space-around;
   }
 
   .featured-cards {
