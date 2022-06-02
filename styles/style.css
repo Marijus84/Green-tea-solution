@@ -54,9 +54,14 @@ nav li:last-child {
 }
 
 section {
-  background-color: white;
   padding: 1.2rem;
-  margin-top: 3rem;
+}
+
+.benefits,
+.tea-types,
+.featured-card {
+  background-color: white;
+  margin: 2rem;
 }
 
 .benefits img {
@@ -88,4 +93,44 @@ h2 {
   color: black;
   opacity: 0.7;
   text-transform: uppercase;
+}
+
+section.featured-cards {
+  padding: 0 0 1.2rem 0;
+}
+
+.featured-cards h2 {
+  line-height: 2.5rem;
+  font-weight: lighter;
+  text-align: left;
+  padding: 0.5rem;
+  margin: 0;
+}
+
+section.featured-cards h3,
+section.featured-cards p {
+  color: black;
+  opacity: 0.7;
+}
+
+.featured-card {
+  padding-bottom: 1.2rem;
+  margin: 6rem 2rem;
+  box-shadow: 0.05rem 0.05rem 0.5rem black;
+}
+
+.featured-image {
+  padding: 1rem;
+}
+
+#card-featured-new {
+  background-color: #e26a6a;
+}
+
+#card-featured-best-seller {
+  background-color: #f4b350;
+}
+
+#card-featured-selection {
+  background-color: #4ecdc4;
 }
