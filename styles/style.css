@@ -9,6 +9,12 @@ body {
   color: white;
 }
 
+main,
+footer {
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
 header {
   background: url("../assets/bg.jpg") no-repeat;
   background-size: cover;
@@ -45,4 +51,29 @@ nav li:last-child {
 
 .heading img {
   padding: 2rem 0;
+}
+
+.benefits {
+  background-color: white;
+  padding: 1.2rem;
+}
+
+.benefits img {
+  max-width: 100%;
+  margin-top: 1.2rem;
+}
+
+.benefits div {
+  background-color: rgba(150, 176, 15, 0.7);
+  padding: 0.5rem 1rem;
+}
+
+h2 {
+  font-family: "Amaranth", sans-serif;
+  font-weight: lighter;
+  letter-spacing: 0.1rem;
+}
+
+.benefits p {
+  opacity: 0.7;
 }
