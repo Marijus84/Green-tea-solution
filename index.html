@@ -12,6 +12,10 @@
       referrerpolicy="no-referrer"
     />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css?family=Amaranth|Open+Sans"
       rel="stylesheet"
     />
@@ -21,19 +25,32 @@
   <body>
     <header>
       <p class="intro">Livraison offerte a partir de 65 eur d'achat !</p>
-      <div class="header-container">
-        <div class="heading">
-          <a href="#"><img src="assets/logo.png" alt="Cup of Tea logo" /></a>
+      <div class="header-content-wrapper">
+        <div class="header-container">
+          <div class="header-basket-container">
+            <div class="heading">
+              <a href="#"
+                ><img src="assets/logo.png" alt="Cup of Tea logo"
+              /></a>
+            </div>
+            <div class="basket">
+              <p>
+                Mon panier <br />
+                42.00 eur
+              </p>
+              <i class="fa fa-shopping-cart fa-4x" aria-hidden="true"></i>
+            </div>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#">Thes</a></li>
+              <li><a href="#">Infusions</a></li>
+              <li><a href="#">Grend crus</a></li>
+              <li><a href="#">Accesories</a></li>
+              <li><a href="#">Epicerie</a></li>
+            </ul>
+          </nav>
         </div>
-        <nav>
-          <ul>
-            <li><a href="#">Thes</a></li>
-            <li><a href="#">Infusions</a></li>
-            <li><a href="#">Grend crus</a></li>
-            <li><a href="#">Accesories</a></li>
-            <li><a href="#">Epicerie</a></li>
-          </ul>
-        </nav>
       </div>
     </header>
     <main>
@@ -46,25 +63,27 @@
       </section>
       <section class="tea-types">
         <h2>Choisisez votre the</h2>
-        <div>
-          <img src="assets/tea/1.jpg" alt="The noir" />
-          <p>The noir</p>
-        </div>
-        <div>
-          <img src="assets/tea/2.jpg" alt="The vert" />
-          <p>The vert</p>
-        </div>
-        <div>
-          <img src="assets/tea/3.jpg" alt="Oolong" />
-          <p>Oolong</p>
-        </div>
-        <div>
-          <img src="assets/tea/4.jpg" alt="The blanc" />
-          <p>The blank</p>
-        </div>
-        <div>
-          <img src="assets/tea/5.jpg" alt="Rooibos" />
-          <p>Rooibos</p>
+        <div class="tea-types-images">
+          <div>
+            <img src="assets/tea/1.jpg" alt="The noir" />
+            <p>The noir</p>
+          </div>
+          <div>
+            <img src="assets/tea/2.jpg" alt="The vert" />
+            <p>The vert</p>
+          </div>
+          <div>
+            <img src="assets/tea/3.jpg" alt="Oolong" />
+            <p>Oolong</p>
+          </div>
+          <div>
+            <img src="assets/tea/4.jpg" alt="The blanc" />
+            <p>The blank</p>
+          </div>
+          <div>
+            <img src="assets/tea/5.jpg" alt="Rooibos" />
+            <p>Rooibos</p>
+          </div>
         </div>
       </section>
       <section class="featured-cards">

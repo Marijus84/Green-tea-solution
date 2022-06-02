@@ -10,7 +10,8 @@ body {
 }
 
 main,
-footer {
+footer,
+.header-content-wrapper {
   max-width: 80vw;
   margin: 0 auto;
 }
@@ -27,6 +28,7 @@ header {
   margin-top: 0;
   opacity: 0.8;
   position: sticky;
+  top: 0;
 }
 
 ul {
@@ -133,4 +135,54 @@ section.featured-cards p {
 
 #card-featured-selection {
   background-color: #4ecdc4;
+}
+
+.basket {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .basket {
+    display: flex;
+    opacity: 0.7;
+  }
+
+  .header-basket-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .benefits {
+    position: relative;
+  }
+
+  .benefits-description {
+    position: absolute;
+    top: 3.5rem;
+  }
+
+  .tea-types-images {
+    display: flex;
+    justify-content: center;
+  }
+
+  .tea-types-images img,
+  .featured-cards img {
+    max-width: 100%;
+  }
+
+  .featured-cards {
+    display: flex;
+    justify-content: center;
+  }
+
+  .featured-card {
+    flex: 1;
+  }
 }
